@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  padding: 10px;
+  1px solid #d9d9d9
+}
+.content {
+  flex-grow: 1;
+  padding: 10px;
+  background: lightgray;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.chat-window {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+.message {
+  display: flex;
+  margin-bottom: 15px;
+}
+.message .content {
+  max-width: fit-content;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.message.sent .content {
+  background-color: #e1ffc7;
+  margin-left: auto;
+  border-top-right-radius: 0;
+}
+.message.received .content {
+  background-color: #f0f0f0;
+  border-top-left-radius: 0;
+}
+.message.join .content {
+  margin: 0 auto;
+}
+.chat-input {
+  position: fixed;
+  bottom: 0;
+  left: 250px; /* Sidebarの幅に合わせる */
+  right: 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ddd;
+}
+.chat-input textarea {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  resize: none;
+}
+.chat-input button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+}

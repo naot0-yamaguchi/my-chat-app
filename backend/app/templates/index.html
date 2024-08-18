@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="../static/css/index.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+  <script defer src="../static/js/index.js"></script>
+  <title>チャットアプリ</title>
+</head>
+<body>
+  <div class="sidebar">
+  <div class="header">
+    <h5>チャットルーム</h5>
+    <button class="btn btn-light btn-sm"><i class="fas fa-sync-alt"></i></button>
+  </div>
+  <button class="btn btn-primary w-100 mb-2">ルーム1</button>
+  <button class="btn btn-primary w-100 mb-2">ルーム2</button>
+  <button class="btn btn-primary w-100 mb-4">ルーム3</button>
+  <div class="header">
+    <h5>アクティブユーザー</h5>
+    <button class="btn btn-light btn-sm"><i class="fas fa-sync-alt"></i></button>
+  </div>
+  <button class="btn btn-secondary w-100 mb-2">ユーザー1</button>
+  <button class="btn btn-secondary w-100 mb-2">ユーザー2</button>
+  <button class="btn btn-secondary w-100">ユーザー3</button>
+  </div>
+  <div class="content">
+  <div class="chat-window">
+    <div class="message sent">
+      <div class="content">こんにちは！</div>
+    </div>
+    <div class="message received">
+      <div class="content">こんにちは！お元気ですか？</div>
+    </div>
+    <div class="message sent">
+      <div class="content">元気です！あなたは？</div>
+    </div>
+    <div class="message received">
+      <div class="content">私も元気です。最近何か面白いことありましたか？</div>
+    </div>
+  </div>
+  <div class="chat-input">
+    <textarea rows="1" placeholder="メッセージを入力..."></textarea>
+    <button class="btn btn-primary">送信</button>
+  </div>
+  </div>
+</body>
+</html>
